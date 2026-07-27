@@ -1,338 +1,83 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-theme="charcoal" data-build="1a2b3c4d">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>당산 유흥 정보 | 당산 유흥 후기</title>
-<meta name="description" content="당산 유흥 후기 전문 사이트. 실제 방문자 리뷰와 전문가 분석으로 당산 지역 유흥 정보를 제공합니다. 밤문화, 술집, 클럽, 룸살롱 등 모든 유흥 정보를 한곳에서 확인하세요.">
-<meta name="keywords" content="당산 유흥, 당산 유흥 후기, 당산 밤문화, 당산 술집 추천, 당산 클럽, 당산 룸살롱, 당산 유흥 정보, 당산 밤문화 후기">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://t3b05-ds-night-rv.vercel.app/">
-<meta name="bpaas-design-system" content="brutalist-avantgarde">
-<meta name="bpaas-design-theme" content="kr-neon-void">
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="당산 유흥 정보 | 당산 유흥 후기">
-<meta property="og:description" content="당산 유흥 후기 전문 사이트. 실제 방문자 리뷰와 전문가 분석으로 당산 지역 유흥 정보를 제공합니다.">
-<meta property="og:url" content="https://t3b05-ds-night-rv.vercel.app/">
-<style>
-/* Brutalist raw CSS - neon-void theme */
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-:root {
-  --bg: #0b0b0f;
-  --text: #e0e0e0;
-  --accent: #ff2d78;
-  --accent2: #00f0ff;
-  --border: #2a2a3a;
-  --card-bg: #12121a;
-  --nav-bg: #0b0b0f;
-  --font-main: 'Courier New', Courier, monospace;
-  --font-heading: 'Courier New', Courier, monospace;
-  --spacing: 1.2rem;
-  --container-max: 1200px;
-}
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
-body {
-  font-family: var(--font-main);
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
-  min-height: 100vh;
-  -webkit-font-smoothing: antialiased;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-h1 {
-  font-size: clamp(1.8rem, 5vw, 3rem);
-  margin-bottom: 1rem;
-  color: var(--accent);
-}
-h2 {
-  font-size: clamp(1.4rem, 4vw, 2rem);
-  margin-bottom: 0.75rem;
-  color: var(--accent2);
-}
-h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-p {
-  margin-bottom: 1rem;
-}
-a {
-  color: var(--accent2);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-a:hover {
-  color: var(--accent);
-}
-.container {
-  max-width: var(--container-max);
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-/* Header / Nav */
-header {
-  background: var(--nav-bg);
-  border-bottom: 2px solid var(--border);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-.nav-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.75rem 1rem;
-  max-width: var(--container-max);
-  margin: 0 auto;
-}
-.logo a {
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: var(--accent);
-  text-decoration: none;
-  letter-spacing: 0.2em;
-}
-.logo a:hover {
-  color: var(--accent2);
-}
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-}
-.nav-links a {
-  color: var(--text);
-  text-decoration: none;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  padding: 0.25rem 0;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.2s;
-}
-.nav-links a:hover {
-  border-bottom-color: var(--accent);
-}
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.25rem;
-}
-.hamburger span {
-  display: block;
-  width: 25px;
-  height: 2px;
-  background: var(--text);
-  transition: 0.3s;
-}
-.tel-link {
-  color: var(--accent);
-  font-weight: bold;
-  text-decoration: none;
-  border: 1px solid var(--accent);
-  padding: 0.25rem 0.75rem;
-  font-size: 0.8rem;
-}
-.tel-link:hover {
-  background: var(--accent);
-  color: var(--bg);
-}
-/* Hero section */
-.hero {
-  padding: 3rem 0 2rem;
-  text-align: center;
-  border-bottom: 1px solid var(--border);
-}
-.hero p {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 1.05rem;
-  color: #bbbbbb;
-}
-/* Info Section */
-.info-section {
-  padding: 2rem 0;
-}
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-.info-card {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  padding: 1.5rem;
-}
-.info-card h3 {
-  color: var(--accent);
-  margin-bottom: 0.75rem;
-}
-.info-card p {
-  font-size: 0.95rem;
-  color: #cccccc;
-}
-.data-highlight {
-  color: var(--accent2);
-  font-weight: bold;
-}
-/* FAQ */
-.faq-section {
-  padding: 2rem 0;
-}
-.faq-item {
-  margin-bottom: 1rem;
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-}
-.faq-question {
-  padding: 1rem 1.5rem;
-  cursor: default;
-  font-weight: bold;
-  color: var(--accent);
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
-  background: rgba(255,45,120,0.05);
-  border-bottom: 1px solid var(--border);
-}
-.faq-answer {
-  padding: 1rem 1.5rem;
-  color: #bbbbbb;
-  font-size: 0.95rem;
-}
-/* Footer */
-footer {
-  border-top: 2px solid var(--border);
-  padding: 1.5rem 0;
-  text-align: center;
-  color: #666;
-  font-size: 0.85rem;
-}
-/* Responsive */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: var(--nav-bg);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 1rem;
-    border-bottom: 2px solid var(--border);
-  }
-  .nav-links.active {
-    display: flex;
-  }
-  .hamburger {
-    display: flex;
-  }
-  .nav-row {
-    position: relative;
-  }
-}
-</style>
+  <meta charset="UTF-8">
+  <title>당산 유흥 정보 — 전문가가 제공하는 지역 시그널과 상세 가이드</title>
+  <meta name="description" content="당산 지역 유흥 시설을 처음 방문하는 분들을 위해 상세한 정보와 지역 시그널, 인원·시간·목적별 체크리스트를 제공하는 전문가 가이드.">
+  <meta name="keywords" content="당산 유흥 정보, 당산 클럽, 당산 바, 유흥 가이드, 당산 나이트라이프">
+  <link rel="canonical" href="https://dangsan-room-guide.hardcoreroom.com/about.html">
+  <meta property="og:title" content="당산 유흥 정보 — 전문가가 제공하는 지역 시그널과 상세 가이드">
+  <meta property="og:description" content="당산 지역 유흥 시설을 처음 방문하는 분들을 위해 상세한 정보와 지역 시그널, 인원·시간·목적별 체크리스트를 제공하는 전문가 가이드.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dangsan-room-guide.hardcoreroom.com/about.html">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <div class="nav-row container">
-    <div class="logo"><a href="/">당산유흥</a></div>
-    <button class="hamburger" aria-label="메뉴 열기" onclick="document.querySelector('.nav-links').classList.toggle('active')">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links">
+
+  <!-- 공통 네비게이션 -->
+  <nav class="r-wrap-e9mb">
+    <ul>
       <li><a href="/">홈</a></li>
+      <li><a href="/guide">가이드</a></li>
       <li><a href="/info">정보</a></li>
-      <li><a href="/reviews">후기</a></li>
-      <li><a href="/map">지도</a></li>
       <li><a href="/faq">FAQ</a></li>
-      <li><a href="tel:010-0000-0000" class="tel-link">문의전화</a></li>
+      <li><a href="/contact">문의</a></li>
     </ul>
-  </div>
-</header>
-<main>
-  <section class="hero container">
-    <h1>당산 유흥 정보</h1>
-    <p>당산 지역 유흥 업소에 대한 객관적 데이터와 분석을 제공합니다. 실제 방문자 통계와 현장 조사 기반의 정보로 신뢰도를 높였습니다.</p>
-  </section>
+  </nav>
 
-  <section class="info-section container">
-    <h2>업종별 현황</h2>
-    <div class="info-grid">
-      <div class="info-card">
-        <h3>룸살롱</h3>
-        <p>당산 내 등록 룸살롱 <span class="data-highlight">23곳</span> 중 운영 확인 <span class="data-highlight">19곳</span>. 평균 이용 시간 2.5시간, 1인 평균 비용 15~25만원 범위.</p>
-      </div>
-      <div class="info-card">
-        <h3>클럽·바</h3>
-        <p>당산역 반경 500m 이내 클럽·바 <span class="data-highlight">14곳</span>. 주말 평균 방문자 수 200~400명. 주요 장르는 힙합, EDM.</p>
-      </div>
-      <div class="info-card">
-        <h3>술집·호프</h3>
-        <p>일반 호프 및 포차 <span class="data-highlight">38곳</span> 확인. 20대 후반~40대 초반 방문 비율 72%. 1인당 평균 소비액 3~5만원.</p>
-      </div>
-      <div class="info-card">
-        <h3>기타 유흥</h3>
-        <p>노래방, 단란주점 등 포함 총 <span class="data-highlight">30곳</span> 이상. 심야 시간(22시~02시) 이용률이 전체의 68%.</p>
-      </div>
+  <!-- 히어로 섹션 -->
+  <section class="m-hero-34o1">
+    <div class="n-nav-kple">
+      <h1>당산 유흥 정보</h1>
+      <p>전문가가 분석한 지역 시그널과 상황별 선택 기준을 통해 현명한 방문을 준비하세요.</p>
     </div>
   </section>
 
-  <section class="info-section container">
-    <h2>지역 시그널 분석</h2>
-    <div class="info-grid">
-      <div class="info-card">
-        <h3>접근성</h3>
-        <p>당산역 2호선·9호선 환승역으로 유흥 밀집 지역까지 도보 5~10분. 주차 가능 업소 40% 수준.</p>
-      </div>
-      <div class="info-card">
-        <h3>안전 지수</h3>
-        <p>당산파출소 관할 내 유흥가 CCTV 32대 운영. 2024년 유흥 관련 신고 건수 전년 대비 12% 감소.</p>
-      </div>
-      <div class="info-card">
-        <h3>상권 동향</h3>
-        <p>2024년 당산 유흥 상권 거래액 약 480억원 추정. 신규 업소 오픈 비율 전년比 8% 증가.</p>
-      </div>
-      <div class="info-card">
-        <h3>방문자 특성</h3>
-        <p>자체 설문조사(n=1,024) 결과: 직장인 67%, 자영업자 18%, 기타 15%. 재방문율 54%.</p>
-      </div>
-    </div>
+  <!-- 상세 정보 섹션 -->
+  <section class="x-box-chps">
+    <h2>1. 당산 유흥 시설 선택 시 기본 고려사항</h2>
+    <p>당산은 지하철 2·9호선과 버스 노선이 집중된 교통 요지이므로 접근성이 뛰어납니다. 이점은 방문 전 교통편 확인이 필수라는 점으로 연결됩니다. 특히 야간에 운영되는 클럽과 바는 지하철 역과의 거리, 5분 이내 도보 가능 여부를 기준으로 선택하면 이동 시간을 최소화하고 안전성을 확보할 수 있습니다.</p>
+    <p>또한, 영업시간대별 인원 흐름을 파악하는 것이 중요합니다. 평일 저녁 7시~9시까지는 일반 직장인 고객이 주를 이루며, 주말에는 10시 이후 인파가 급증합니다. 이런 패턴을 고려해 예약 여부와 대기 시간을 미리 체크하면 불필요한 대기 시간을 피할 수 있습니다.</p>
+
+    <h2>2. 인원 규모에 따른 최적 선택</h2>
+    <p>소규모(2~4인) 모임은 라운지형 바를, 중대규모(5~12인) 모임은 테이블 서비스가 가능한 클럽을 추천합니다. 라운지형 바는 좌석 간 거리가 넓어 대화에 집중할 수 있으며, 사전 예약 시 프라이빗 공간 제공 여부를 확인하는 것이 좋습니다.</p>
+    <p>반면, 대규모 모임은 입구에서 입장 인원 제한이 적용될 수 있습니다. 사전 문의를 통해 인원 제한을 확인하고, 가능한 경우 프리미엄 패키지를 예약하면 원활한 입장이 보장됩니다.</p>
+
+    <h2>3. 시간대별 추천 옵션</h2>
+    <p>평일 19시~21시: 비즈니스 라운지와 와인 바가 활발히 운영됩니다. 이때는 주류 선택 폭이 넓고, 비교적 조용한 분위기에서 네트워킹이 가능합니다.</p>
+    <p>주말 22시 이후: 대형 클럽과 댄스홀에서 DJ 파티가 진행됩니다. 이때는 복장 규정과 입장 조건(연령, 신분증) 확인이 필요합니다. 특히, 주류 판매 제한 시간이 있기 때문에 사전 주류 구매 여부를 체크하는 것이 바람직합니다.</p>
+
+    <h2>4. 방문 목적별 체크리스트</h2>
+    <p>① 비즈니스 미팅: 조용한 라운지, 예약제 좌석, 와인 또는 위스키 등 고급 주류 제공 여부 확인. 사전 예약 시 최소 2시간 전까지 확인 요청.</p>
+    <p>② 친구와의 파티: 라운지와 클럽을 동시에 이용 가능한 복합 시설 선택, 입장료와 드링크 패키지 가격 비교, 대기 시간 최소화를 위한 사전 티켓 구매.</p>
+    <p>③ 데이트: 분위기 조명과 음악이 부드러운 바, 프라이빗 부스 여부, 1인당 평균 소비 금액을 미리 파악해 예산 조정.</p>
+
+    <h2>5. 안전 및 예절 가이드</h2>
+    <p>모든 시설은 입장 시 신분증 확인이 필수이며, 미성년자 출입이 엄격히 제한됩니다. 또한, 각 시설마다 흡연 구역이 명확히 구분되어 있으니 사전에 확인하고, 비흡연 구역에서는 금연을 준수해야 합니다.</p>
+    <p>음주량이 높은 경우 대리운전 서비스를 미리 예약하거나, 지하철 귀가 시간을 고려해 이동 계획을 세우는 것이 안전합니다. 특히, 심야 영업 시설에서는 보안 인력이 배치되는 시간대를 파악해, 필요 시 도움을 요청할 수 있도록 준비합니다.</p>
   </section>
 
-  <section class="faq-section container">
+  <!-- FAQ 섹션 -->
+  <section class="t-ico-fs1m">
     <h2>자주 묻는 질문</h2>
-    <div class="faq-item">
-      <div class="faq-question">당산 유흥 정보의 신뢰도는 어떻게 검증하나요?</div>
-      <div class="faq-answer">모든 정보는 실제 방문 후기와 공식 통계, 현장 조사를 기반으로 합니다. 각 데이터는 최소 3개 이상의 출처를 교차 검증하며, 분기별로 업데이트합니다.</div>
+    <div class="t-ico-fs1m open">
+      <a href="#faq1">당산 클럽 입장 연령 제한은 어떻게 되나요?</a>
+      <p id="faq1">모든 클럽은 만 19세 이상 신분증 확인을 반드시 진행합니다. 일부 프리미엄 라운지는 만 21세 이상을 요구할 수 있으니 사전에 확인이 필요합니다.</p>
     </div>
-    <div class="faq-item">
-      <div class="faq-question">업소별 상세 후기는 어디서 볼 수 있나요?</div>
-      <div class="faq-answer">'후기' 메뉴에서 업소별, 유형별로 정리된 리뷰를 확인하실 수 있습니다. 모든 리뷰는 실명 인증을 거쳐 등록됩니다.</div>
+    <div class="t-ico-fs1m">
+      <a href="#faq2">주말에 예약 없이 들어갈 수 있나요?</a>
+      <p id="faq2">인기 클럽은 사전 예약이 없으면 입장 대기가 길어질 수 있습니다. 특히 22시 이후에는 티켓 판매가 종료될 수 있으므로, 온라인 예매를 권장합니다.</p>
     </div>
-    <div class="faq-item">
-      <div class="faq-question">정보 제공에 따른 수수료나 광고비가 있나요?</div>
-      <div class="faq-answer">당사는 업소로부터 일체의 광고비나 수수료를 받지 않습니다. 순수 사용자 리뷰와 독립적 분석만을 제공합니다.</div>
+    <div class="t-ico-fs1m">
+      <a href="#faq3">대중교통을 이용할 때 가장 편리한 역은?</a>
+      <p id="faq3">당산역(2·9호선)과 합정역(6·2·9호선)은 대부분의 유흥 시설과 5분 이내 도보 거리에 위치합니다. 야간에는 버스 노선이 제한될 수 있으니, 지하철 이용을 우선 고려하세요.</p>
     </div>
-    <div
+  </section>
+
+  <!-- 푸터 -->
+  <footer class="r-wrap-e9mb">
+    <p>&copy; 2026 Dangsan Nightlife Guide. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>

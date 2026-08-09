@@ -1,192 +1,190 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>당산 유흥 후기 블로그 – 전문가가 분석한 리얼 데이터</title>
-  <meta name="description" content="당산 유흥 후기의 모든 것. 2025년 최신 통계와 실제 방문객 리뷰를 기반으로 한 전문 분석. 당산 밤문화, 룸살롱, 클럽, 술집 추천 정보를 신뢰도 높은 데이터로 확인하세요.">
-  <meta name="keywords" content="당산 유흥, 당산 유흥 후기, 당산 밤문화, 당산 술집 추천, 당산 클럽, 당산 룸살롱, 당산 유흥 정보, 당산 밤문화 후기, 데이터 분석">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://dangsan-room-guide.hardcoreroom.com/blog.html">
-  <meta name="bpaas-design-system" content="brutalist-avantgarde">
-  <meta name="bpaas-design-theme" content="kr-neon-void">
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="당산 유흥 후기 블로그 – 전문가가 분석한 리얼 데이터">
-  <meta property="og:description" content="당산 유흥 후기의 모든 것. 2025년 최신 통계와 실제 방문객 리뷰를 기반으로 한 전문 분석. 당산 밤문화, 룸살롱, 클럽, 술집 추천 정보를 신뢰도 높은 데이터로 확인하세요.">
-  <meta property="og:url" content="https://dangsan-room-guide.hardcoreroom.com/blog.html">
-  <meta property="og:site_name" content="당산 유흥 후기">
-  <meta property="og:locale" content="ko_KR">
-  <meta property="og:image" content="https://t3b05-ds-night-rv.vercel.app/images/og-blog.jpg">
-  <meta name="twitter:card" content="summary">
-  <!-- CSS 핵심 (동일 디자인 시스템) -->
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --bg: #0a0a0f;
-      --text: #e0e0e0;
-      --accent: #ff2a6d;
-      --accent2: #05d9e8;
-      --border: #2a2a3a;
-      --card-bg: #12121a;
-      --header-bg: rgba(10,10,15,0.95);
-      --font-mono: 'SF Mono', 'Fira Code', monospace;
-      --font-sans: 'Inter', 'Noto Sans KR', sans-serif;
-    }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: var(--font-sans);
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      font-family: var(--font-mono);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      line-height: 1.2;
-    }
-    h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1rem; }
-    h2 { font-size: clamp(1.5rem, 4vw, 2.5rem); margin-bottom: 1rem; border-left: 4px solid var(--accent); padding-left: 1rem; }
-    h3 { font-size: clamp(1.2rem, 3vw, 1.8rem); margin-bottom: 0.75rem; }
-    p { margin-bottom: 1.2rem; font-size: 1.05rem; max-width: 72ch; }
-    a { color: var(--accent2); text-decoration: underline; text-underline-offset: 3px; }
-    a:hover { color: var(--accent); }
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
-    /* Header / Nav (동일 패턴) */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--header-bg);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-    }
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.8rem 1.5rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    nav ul {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-      font-family: var(--font-mono);
-      font-size: 0.95rem;
-    }
-    nav ul li a {
-      color: var(--text);
-      text-decoration: none;
-      padding: 0.3rem 0;
-      border-bottom: 2px solid transparent;
-      transition: border-color 0.2s;
-    }
-    nav ul li a:hover { border-bottom-color: var(--accent); color: var(--accent2); }
-    .tel-link {
-      display: inline-block;
-      background: var(--accent);
-      color: #000;
-      font-weight: 700;
-      padding: 0.4rem 1.2rem;
-      border-radius: 2px;
-      text-decoration: none;
-      transition: background 0.2s;
-    }
-    .tel-link:hover { background: var(--accent2); color: #000; }
-    .hamburger {
-      display: none;
-      background: none;
-      border: 1px solid var(--border);
-      color: var(--text);
-      font-size: 1.5rem;
-      padding: 0.3rem 0.6rem;
-      cursor: pointer;
-    }
-    @media (max-width: 768px) {
-      nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: var(--header-bg);
-        padding: 1rem;
-        gap: 0.8rem;
-        border-bottom: 1px solid var(--border);
-      }
-      nav ul.active { display: flex; }
-      .hamburger { display: block; }
-    }
-    /* Article / Blog */
-    article {
-      padding: 3rem 0;
-      border-bottom: 1px solid var(--border);
-    }
-    .meta {
-      font-family: var(--font-mono);
-      font-size: 0.9rem;
-      color: #888;
-      margin-bottom: 2rem;
-    }
-    .data-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      padding: 1.5rem;
-      margin: 1.5rem 0;
-      border-radius: 4px;
-    }
-    .data-card strong { color: var(--accent); }
-    blockquote {
-      border-left: 4px solid var(--accent2);
-      padding-left: 1.5rem;
-      margin: 1.5rem 0;
-      font-style: italic;
-      color: #ccc;
-    }
-    /* FAQ */
-    .faq-section {
-      padding: 3rem 0;
-    }
-    .faq-item {
-      margin-bottom: 1rem;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 1rem;
-    }
-    .faq-question {
-      font-weight: 700;
-      font-family: var(--font-mono);
-      color: var(--accent2);
-      cursor: pointer;
-    }
-    .faq-answer {
-      margin-top: 0.5rem;
-      padding-left: 1rem;
-    }
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 2rem 0;
-      border-top: 1px solid var(--border);
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+ <title>당산 유흥 후기 블로그 – 전문가가 분석한 리얼 데이터</title>
+ <meta name="description" content="당산 유흥 후기의 모든 것. 2025년 최신 통계와 실제 방문객 리뷰를 기반으로 한 전문 분석. 당산 밤문화, 룸살롱, 클럽, 술집 추천 정보를 신뢰도 높은 데이터로 확인하세요.">
+ <meta name="keywords" content="당산 유흥, 당산 유흥 후기, 당산 밤문화, 당산 술집 추천, 당산 클럽, 당산 룸살롱, 당산 유흥 정보, 당산 밤문화 후기, 데이터 분석">
+ <meta name="robots" content="index, follow">
+ <link rel="canonical" href="https://dangsan-room-guide.hardcoreroom.com/blog.html">
+ <!-- Open Graph / Facebook -->
+ <meta property="og:type" content="article">
+ <meta property="og:title" content="당산 유흥 후기 블로그 – 전문가가 분석한 리얼 데이터">
+ <meta property="og:description" content="당산 유흥 후기의 모든 것. 2025년 최신 통계와 실제 방문객 리뷰를 기반으로 한 전문 분석. 당산 밤문화, 룸살롱, 클럽, 술집 추천 정보를 신뢰도 높은 데이터로 확인하세요.">
+ <meta property="og:url" content="https://dangsan-room-guide.hardcoreroom.com/blog.html">
+ <meta property="og:site_name" content="당산 유흥 후기">
+ <meta property="og:locale" content="ko_KR">
+ <meta property="og:image" content="https://t3b05-ds-night-rv.vercel.app/images/og-blog.jpg">
+ <meta name="twitter:card" content="summary">
+ <!-- CSS 핵심 (동일 디자인 시스템) -->
+ <style>
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ :root {
+ --bg: #0a0a0f;
+ --text: #e0e0e0;
+ --accent: #ff2a6d;
+ --accent2: #05d9e8;
+ --border: #2a2a3a;
+ --card-bg: #12121a;
+ --header-bg: rgba(10,10,15,0.95);
+ --font-mono: 'SF Mono', 'Fira Code', monospace;
+ --font-sans: 'Inter', 'Noto Sans KR', sans-serif;
+ }
+ html { scroll-behavior: smooth; }
+ body {
+ font-family: var(--font-sans);
+ background: var(--bg);
+ color: var(--text);
+ line-height: 1.7;
+ -webkit-font-smoothing: antialiased;
+ }
+ h1, h2, h3, h4, h5, h6 {
+ font-family: var(--font-mono);
+ font-weight: 700;
+ letter-spacing: -0.02em;
+ line-height: 1.2;
+ }
+ h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1rem; }
+ h2 { font-size: clamp(1.5rem, 4vw, 2.5rem); margin-bottom: 1rem; border-left: 4px solid var(--accent); padding-left: 1rem; }
+ h3 { font-size: clamp(1.2rem, 3vw, 1.8rem); margin-bottom: 0.75rem; }
+ p { margin-bottom: 1.2rem; font-size: 1.05rem; max-width: 72ch; }
+ a { color: var(--accent2); text-decoration: underline; text-underline-offset: 3px; }
+ a:hover { color: var(--accent); }
+ .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+ /* Header / Nav (동일 패턴) */
+ header {
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ background: var(--header-bg);
+ backdrop-filter: blur(12px);
+ border-bottom: 1px solid var(--border);
+ }
+ nav {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0.8rem 1.5rem;
+ max-width: 1200px;
+ margin: 0 auto;
+ }
+ nav ul {
+ display: flex;
+ gap: 2rem;
+ list-style: none;
+ font-family: var(--font-mono);
+ font-size: 0.95rem;
+ }
+ nav ul li a {
+ color: var(--text);
+ text-decoration: none;
+ padding: 0.3rem 0;
+ border-bottom: 2px solid transparent;
+ transition: border-color 0.2s;
+ }
+ nav ul li a:hover { border-bottom-color: var(--accent); color: var(--accent2); }
+ .tel-link {
+ display: inline-block;
+ background: var(--accent);
+ color: #000;
+ font-weight: 700;
+ padding: 0.4rem 1.2rem;
+ border-radius: 2px;
+ text-decoration: none;
+ transition: background 0.2s;
+ }
+ .tel-link:hover { background: var(--accent2); color: #000; }
+ .hamburger {
+ display: none;
+ background: none;
+ border: 1px solid var(--border);
+ color: var(--text);
+ font-size: 1.5rem;
+ padding: 0.3rem 0.6rem;
+ cursor: pointer;
+ }
+ @media (max-width: 768px) {
+ nav ul {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ width: 100%;
+ background: var(--header-bg);
+ padding: 1rem;
+ gap: 0.8rem;
+ border-bottom: 1px solid var(--border);
+ }
+ nav ul.active { display: flex; }
+ .hamburger { display: block; }
+ }
+ /* Article / Blog */
+ article {
+ padding: 3rem 0;
+ border-bottom: 1px solid var(--border);
+ }
+ .meta {
+ font-family: var(--font-mono);
+ font-size: 0.9rem;
+ color: #888;
+ margin-bottom: 2rem;
+ }
+ .data-card {
+ background: var(--card-bg);
+ border: 1px solid var(--border);
+ padding: 1.5rem;
+ margin: 1.5rem 0;
+ border-radius: 4px;
+ }
+ .data-card strong { color: var(--accent); }
+ blockquote {
+ border-left: 4px solid var(--accent2);
+ padding-left: 1.5rem;
+ margin: 1.5rem 0;
+ font-style: italic;
+ color: #ccc;
+ }
+ /* FAQ */
+ .faq-section {
+ padding: 3rem 0;
+ }
+ .faq-item {
+ margin-bottom: 1rem;
+ border-bottom: 1px solid var(--border);
+ padding-bottom: 1rem;
+ }
+ .faq-question {
+ font-weight: 700;
+ font-family: var(--font-mono);
+ color: var(--accent2);
+ cursor: pointer;
+ }
+ .faq-answer {
+ margin-top: 0.5rem;
+ padding-left: 1rem;
+ }
+ /* Footer */
+ footer {
+ text-align: center;
+ padding: 2rem 0;
+ border-top: 1px solid var(--border);
+ font-size: 0.9rem;
+ color: #777;
+ }
+ </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="/" style="font-family:var(--font-mono);font-weight:700;font-size:1.3rem;text-decoration:none;color:var(--accent);">D.N.R</a>
-      <ul id="navMenu">
-        <li><a href="/">홈</a></li>
-        <li><a href="/blog/">블로그</a></li>
-        <li><a href="/reviews/">방문 후기</a></li>
-        <li><a href="/guide/">이용 가이드</a></li>
-        <li><a href="/contact/">문의</a></li>
-      </ul>
+ <header>
+ <nav>
+ <a href="/" style="font-family:var(--font-mono);font-weight:700;font-size:1.3rem;text-decoration:none;color:var(--accent);">D.N.R</a>
+ <ul id="navMenu">
+ <li><a href="/">홈</a></li>
+ <li><a href="/blog/">블로그</a></li>
+ <li><a href="/reviews/">방문 후기</a></li>
+ <li><a href="/guide/">이용 가이드</a></li>
+ <li><a href="/contact/">문의</a></li>
+ </ul>
 </body>
 </html>
